@@ -77,7 +77,7 @@ Our initial few days was spent on setting up a baseline that we can use to measu
 We modified the mdriver code to run all the traces in parallel. We used pthreads to spawn as many threads as there are traces and assigned to one trace to each thread. The heap will be initialized to a clean state once and will continue to receive requests until all threads have finished running their assigned trace file. While doing so, we retained the correctness checks, utilization and throughput calculations carried out by the mdriver code. Each thread runs each of these checks with the trace that it is assigned to.
 Adapting the mdriver code structure, especially the timing measurement logic to work with this design did take up a few days but we were finally able to get it up and running.
 Below is the result of our serial malloc implementation running on a shark machine –
-
+https://github.com/nimsnaik/Lock-Free-Stack-Implementation-using-Custom-Parallel-Malloc/blob/master/Malloc%20-%20Serial.png
  
 Below is the performance of the thread safe malloc implemented through a pthread_mutex_lock on the same machine –
 https://github.com/nimsnaik/Lock-Free-Stack-Implementation-using-Custom-Parallel-Malloc/blob/master/Thread%20Safe%20Malloc.png
