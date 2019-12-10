@@ -1,3 +1,5 @@
+## Final Report
+[FinalReport.pdf](http://nimsnaik.github.io/Lock-Free-Stack-Implementation-using-Custom-Parallel-Malloc/Final_Report_15618.pdf)
 ## Project Proposal
 
 ### Summary
